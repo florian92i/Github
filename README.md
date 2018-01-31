@@ -31,19 +31,19 @@
  
  ## Les commandes de Git
  
- ### Pour copier coller sur windows 
+ #### Pour copier coller sur windows 
  
  ``Ctrl`` +``V`` && ``Shift`` + ``Inser``
  
  *******
 
- ### Afficher toute les commandes disponible sur git 
+ #### Afficher toute les commandes disponible sur git 
  
  ``git``
  
  *******
 
- ### Activer un dossier comme repository Git
+ #### Activer un dossier comme repository Git
  
  ``git init``
  
@@ -51,7 +51,7 @@
 
  Il suffit de se placer dans ce dossier avec le Terminal puis d'utiliser la commande ``git init``
  
- ###  Gérer un repository
+ ####  Gérer un repository
  
  ``git add``
  
@@ -61,7 +61,7 @@ Gagner du temps, vous pouvez ajouter tous les fichiers dans le répertoire coura
 
 *******
 
-### Modifiez votre repository
+##### Modifiez votre repository
 
 ``git commit``
 
@@ -77,7 +77,7 @@ L'option   -a demande à Git de mettre à jour les fichiers déjà existants dan
 
 *******
 
-### Historique de nos commits 
+##### Historique de nos commits 
 
 ``git log``    
 
@@ -93,3 +93,12 @@ affiche la liste de tous les commits que tu as réalisés
 
 *******
 
+#### Positionner sur un commit donné de votre historique
+
+``git checkout SHADuCommit`` (SHADuCommit identifiant unique quand on tape git log on peut le voir)
+
+cela va crée une branche parallele 
+
+#### revenir à votre branche principale (au commit le plus récent)
+
+``git checkout master``
