@@ -111,4 +111,4 @@ Pour mieux vous y retrouver dans votre code en ligne : __appuyez sur la touche t
 
 ### Récupérez du code d'un autre repository
 
-![alt text](https://github.com/florian92i/Laravel/blob/master/artisan_cpt.PNG)
+![alt text](https://github.com/florian92i/Github/blob/master/img/clone.PNG)
