@@ -6,15 +6,21 @@
 
 ``pwd``
 
+*******
+
 ### Connaître votre répertoire courant
  ``ls``
  
  Si vous souhaitez voir les éléments de votre répertoire courant sous forme de liste, vous pouvez ajouter l'option ``-l`` à la commande ls. Vous pouvez également afficher plus d'informations sur ces éléments en utilisant l'option ``-a``
  
+ *******
+
  ### Créer un fichier
  
  `` touch ``
  
+ *******
+
  ### Créer un dossier
  
  ``mkdir``
@@ -29,14 +35,20 @@
  
  ``Ctrl`` +``V`` && ``Shift`` + ``Inser``
  
+ *******
+
  ### Afficher toute les commandes disponible sur git 
  
  ``git``
  
+ *******
+
  ### Activer un dossier comme repository Git
  
  ``git init``
  
+ *******
+
  Il suffit de se placer dans ce dossier avec le Terminal puis d'utiliser la commande ``git init``
  
  ###  Gérer un repository
@@ -46,6 +58,8 @@
  Git génère un index de tous les fichiers dont il doit faire le suivi. Lorsque vous créez un fichier dans un repository, vous devez donc l'ajouter à l'index Git à l'aide de la commande ``git add`` nomDeVotreFichier.extension
  
 Gagner du temps, vous pouvez ajouter tous les fichiers dans le répertoire courant en tapant ``git add`` .
+
+*******
 
 ### Modifiez votre repository
 
@@ -61,8 +75,13 @@ L'option   -a demande à Git de mettre à jour les fichiers déjà existants dan
 
 ``git commit -a -m "Ajouté itinéraire dans checklist-vacances.md"``
 
+*******
+
 ### Historique de nos commits 
 
 ``git log``    
 
 affiche la liste de tous les commits que tu as réalisés
+
+*******
+
