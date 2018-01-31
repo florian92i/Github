@@ -29,21 +29,21 @@
  
  ``cat``
  
- ## Les commandes de Git
+ # Les commandes de Git
  
- #### Pour copier coller sur windows 
+ ### Pour copier coller sur windows 
  
  ``Ctrl`` +``V`` && ``Shift`` + ``Inser``
  
  *******
 
- #### Afficher toute les commandes disponible sur git 
+ ### Afficher toute les commandes disponible sur git 
  
  ``git``
  
  *******
 
- #### Activer un dossier comme repository Git
+ ### Activer un dossier comme repository Git
  
  ``git init``
  
@@ -51,7 +51,7 @@
 
  Il suffit de se placer dans ce dossier avec le Terminal puis d'utiliser la commande ``git init``
  
- ####  Gérer un repository
+ ### Gérer un repository
  
  ``git add``
  
@@ -61,7 +61,7 @@ Gagner du temps, vous pouvez ajouter tous les fichiers dans le répertoire coura
 
 *******
 
-##### Modifiez votre repository
+#### Modifiez votre repository
 
 ``git commit``
 
@@ -77,7 +77,7 @@ L'option   -a demande à Git de mettre à jour les fichiers déjà existants dan
 
 *******
 
-##### Historique de nos commits 
+#### Historique de nos commits 
 
 ``git log``    
 
@@ -93,12 +93,22 @@ affiche la liste de tous les commits que tu as réalisés
 
 *******
 
-#### Positionner sur un commit donné de votre historique
+### Positionner sur un commit donné de votre historique
 
 ``git checkout SHADuCommit`` (SHADuCommit identifiant unique quand on tape git log on peut le voir)
 
 cela va crée une branche parallele 
 
-#### revenir à votre branche principale (au commit le plus récent)
+### revenir à votre branche principale (au commit le plus récent)
 
 ``git checkout master``
+
+# Github
+
+#### Astuce quand on est sur le site github
+
+Pour mieux vous y retrouver dans votre code en ligne : __appuyez sur la touche t__, vous pourrez alors __faire une recherche__ dans vos noms de fichiers en tapant un mot / des lettres clé 
+
+### Récupérez du code d'un autre repository
+
+![alt text](https://github.com/florian92i/Laravel/blob/master/artisan_cpt.PNG)
