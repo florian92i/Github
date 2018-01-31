@@ -83,5 +83,12 @@ L'option   -a demande à Git de mettre à jour les fichiers déjà existants dan
 
 affiche la liste de tous les commits que tu as réalisés
 
+son SHA : son identifiant unique, qui se présente sous forme d'une longue chaîne de caractères et de nombres. Par exemple : "87753191cef0bdb955a4cb4ff841f7c2cce4cb1c".
+
+son auteur : qui a fait le commit (utile lorsque vous travaillez à plusieurs sur un projet !)
+
+sa date
+
+sa description : vous vous rappelez, c'est le message de description que vous indiquez avec l'option  -m lorsque vous faites votre git commit 
 *******
 
