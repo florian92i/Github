@@ -174,3 +174,33 @@ Cette commande demande à Git:"Envoie mes modifs dans la branche master de mon r
 Envoie dans mon répertoire local les dernières modifications de la branche master située sur mon remote origin. 
 
 *******
+
+## Les branches github
+
+### Voir les branches présentes dans votre repo
+
+``git branch``
+
+### Créer une nouvelle branche
+
+``git branch nouvelle-branche``
+
+###  Ce placer dans une autre branche à l'intérieur de votre repo
+
+``git checkout nouvelle-branche``
+
+création + position = ``git checkout -b ma-branche``
+
+### Fusionnez des branches
+
+Il va souvent vous arriver de vouloir ajouter  dans une branche A les mises à jour que vous avez faites dans une autre branche B
+on se place dans la branche  A:
+``git checkout brancheA``
+
+Ensuite on fusionne 
+
+``git merge brancheB`` 
+
+### Contribuez à des projets open source
+
+https://openclassrooms.com/courses/gerer-son-code-avec-git-et-github/contribuer-a-des-projets-open-source
