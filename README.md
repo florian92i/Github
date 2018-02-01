@@ -8,36 +8,57 @@
 
 *******
 
-### Connaître votre répertoire courant
+### Connaître les fichiers dans le répertoire courant
  ``ls``
  
  Si vous souhaitez voir les éléments de votre répertoire courant sous forme de liste, vous pouvez ajouter l'option ``-l`` à la commande ls. Vous pouvez également afficher plus d'informations sur ces éléments en utilisant l'option ``-a``
+ 
+ 
+ `$> ls -la`\
+Cette commande affiche les fichiers cachés ( commençant par un "." exemple : ".fichierCaché" ) et en précisant les droits sur ce fichier, s'il est de type fichier ou répertoire et de manière structurée.
+
  
  *******
 
  ### Créer un fichier
  
- `` touch ``
+ `touch nomDuFichier.extension`
  
  *******
 
  ### Créer un dossier
  
- ``mkdir``
+ `mkdir leNomDuRepertoire`
  
  ### Afficher le contenu d’un fichier
  
- ``cat``
+ `cat nomDuFichier.extension`
+ 
+ La commande cat affiche tout le fichier, pour afficher le fichier peu à peu, préconiser l'usage de la commande : 
+ 
+`more nomDuFichier.extension`
+ 
+ ### Se déplacer dans les répertoires
+ `cd`
+ 
+ La commande `cd` permet de se déplacer dans un repertoire ( uniquement un répertoire ! ). 
+ 
+ `cd nomDuRep/` \
+ `cd nomDuRep/nomDuSousRep/` \
+ `cd ..` Permet de remonter dans le répertoire parent \
+ `cd -` Permet de revenir dans le répertoire précédent 
+ 
+ 
  
  # Les commandes de Git
  
- ### Pour copier coller sur windows 
+ ### Pour copier / coller sur Windows ou UNIX
  
  ``Ctrl`` +``V`` && ``Shift`` + ``Inser``
  
  *******
 
- ### Afficher toute les commandes disponible sur git 
+ ### Afficher toutes les commandes disponibles sur git 
  
  ``git``
  
@@ -55,9 +76,13 @@
  
  ``git add``
  
- Git génère un index de tous les fichiers dont il doit faire le suivi. Lorsque vous créez un fichier dans un repository, vous devez donc l'ajouter à l'index Git à l'aide de la commande ``git add`` nomDeVotreFichier.extension
+ Git génère un index de tous les fichiers dont il doit faire le suivi. Lorsque vous créez un fichier dans un repository, vous devez donc l'ajouter à l'index Git à l'aide de la commande 
  
-Gagner du temps, vous pouvez ajouter tous les fichiers dans le répertoire courant en tapant ``git add`` .
+ `git add nomDeVotreFichier.extension`
+ 
+Gagner du temps, vous pouvez ajouter tous les fichiers dans le répertoire courant en tapant :
+
+`git add .` 
 
 *******
 
@@ -65,15 +90,16 @@ Gagner du temps, vous pouvez ajouter tous les fichiers dans le répertoire coura
 
 ``git commit``
 
-Vous devez demander à Git d'enregistrer vos modifications en faisant un ``git commit``. L'option-m vous permet de lui envoyer un message décrivant les modifications effectuées
+Vous devez demander à Git d'enregistrer vos modifications en faisant un ``git commit``. __Le commit est obligatoire__ afin d'expliquer les modifications effectuées.
 
-``git commit -m "La V2 pour hack la nasa est fini !" ``
+`git commit` \
+Cette commande ouvre un editeur de texte où vous pouvez y écrire votre commit \
 
+``git commit -m "La V2 pour hack la nasa est fini !" ``\
+Cette commande permet d'écrire directement le message du commit grâce au paramètre `-m`
 
-
+``git commit -a -m "Ajouté itinéraire dans checklist-vacances.md"``\
 L'option   -a demande à Git de mettre à jour les fichiers déjà existants dans son index exemple :
-
-``git commit -a -m "Ajouté itinéraire dans checklist-vacances.md"``
 
 *******
 
@@ -81,7 +107,7 @@ L'option   -a demande à Git de mettre à jour les fichiers déjà existants dan
 
 ``git log``    
 
-affiche la liste de tous les commits que tu as réalisés
+Affiche la liste de tous les commits que tu as réalisé
 
 * son SHA : son identifiant unique, qui se présente sous forme d'une longue chaîne de caractères et de nombres. Par exemple : "87753191cef0bdb955a4cb4ff841f7c2cce4cb1c".
 
@@ -97,11 +123,11 @@ affiche la liste de tous les commits que tu as réalisés
 
 ``git checkout SHADuCommit`` (SHADuCommit identifiant unique quand on tape git log on peut le voir)
 
-cela va crée une branche parallele 
+cela va créer une branche parallèle 
 
 *******
 
-### revenir à votre branche principale (au commit le plus récent)
+### Revenir à votre branche principale (au commit le plus récent)
 
 ``git checkout master``
 
