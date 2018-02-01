@@ -99,9 +99,13 @@ affiche la liste de tous les commits que tu as réalisés
 
 cela va crée une branche parallele 
 
+*******
+
 ### revenir à votre branche principale (au commit le plus récent)
 
 ``git checkout master``
+
+*******
 
 # Github
 
@@ -111,4 +115,36 @@ Pour mieux vous y retrouver dans votre code en ligne : __appuyez sur la touche t
 
 ### Récupérez du code d'un autre repository
 
+* Tout d'abord copier l'url
+
+*******
+
 ![alt text](https://github.com/florian92i/Github/blob/master/img/clone.PNG)
+
+* Ensuite
+
+``git clone lienFourniParGitHub``
+
+*******
+
+### Créez votre premier repository
+
+ Cliquez sur le bouton "Create new" symbolisé par un signe "+" en haut à droite de votre écran, puis "New repository"
+ 
+ *******
+
+### Envoyez votre code sur GitHub
+ 
+``git push origin master``
+
+Cette commande demande à Git:"Envoie mes modifs dans la branche master de mon remote origin."
+
+*******
+
+### Récupérez des modifications qui on été fait sur un projet github
+
+``git pull origin master``
+
+Envoie dans mon répertoire local les dernières modifications de la branche master située sur mon remote origin. 
+
+*******
