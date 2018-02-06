@@ -51,7 +51,7 @@ Cette commande affiche les fichiers cachés ( commençant par un "." exemple : "
  
  
  # Les commandes de Git
- 
+ https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande
  ### Pour copier / coller sur Windows ou UNIX
  
  ``Ctrl`` +``V`` && ``Shift`` + ``Inser``
